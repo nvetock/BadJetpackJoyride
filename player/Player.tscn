@@ -1,13 +1,225 @@
-[gd_scene load_steps=3 format=3 uid="uid://7wu84upsp3nw"]
+[gd_scene load_steps=44 format=3 uid="uid://7wu84upsp3nw"]
+
+[ext_resource type="Texture2D" uid="uid://ddl7h26dmwcqc" path="res://resources/alien/death/Alien_death1.png" id="1_t7u8x"]
+[ext_resource type="Texture2D" uid="uid://dasp8utmu7782" path="res://resources/alien/death/Alien_death2.png" id="2_lnwue"]
+[ext_resource type="Texture2D" uid="uid://cuuygo6ln5drt" path="res://resources/alien/death/Alien_death3.png" id="3_7tnb4"]
+[ext_resource type="Texture2D" uid="uid://cp75cjmv3w63t" path="res://resources/alien/death/Alien_death4.png" id="4_2q4k2"]
+[ext_resource type="Texture2D" uid="uid://chruwfrodkgii" path="res://resources/alien/idle/Alien_idle1.png" id="5_w36ex"]
+[ext_resource type="Texture2D" uid="uid://bp3l1lx74bgpd" path="res://resources/alien/idle/Alien_idle2.png" id="6_7wro5"]
+[ext_resource type="Texture2D" uid="uid://b7htsd43y8fl5" path="res://resources/alien/idle/Alien_idle3.png" id="7_u3bl4"]
+[ext_resource type="Texture2D" uid="uid://53e17b2njs3f" path="res://resources/alien/idle/Alien_idle4.png" id="8_wpul2"]
+[ext_resource type="Texture2D" uid="uid://bblomiumax4lf" path="res://resources/alien/jump/Alien_jump1.png" id="9_pcftw"]
+[ext_resource type="Texture2D" uid="uid://b4pwj3gyp506c" path="res://resources/alien/jump/Alien_jump2.png" id="10_cayk5"]
+[ext_resource type="Texture2D" uid="uid://bgby86702x4mm" path="res://resources/alien/jump/Alien_jump3.png" id="11_wqfsd"]
+[ext_resource type="Texture2D" uid="uid://bhmylw1d4xt2v" path="res://resources/alien/jump/Alien_jump4.png" id="12_wpo5q"]
+[ext_resource type="Texture2D" uid="uid://b0q3cjsydjemc" path="res://resources/alien/jump/Alien_jump5.png" id="13_22tms"]
+[ext_resource type="Texture2D" uid="uid://hpm823ior58x" path="res://resources/alien/jump/Alien_jump6.png" id="14_0a0r0"]
+[ext_resource type="Texture2D" uid="uid://mq2e4hgr33sj" path="res://resources/alien/run/Alien_run1.png" id="15_y5372"]
+[ext_resource type="Texture2D" uid="uid://pyuvml0v5kkt" path="res://resources/alien/run/Alien_run2.png" id="16_nckww"]
+[ext_resource type="Texture2D" uid="uid://dihu7xmanlwev" path="res://resources/alien/run/Alien_run3.png" id="17_eftk4"]
+[ext_resource type="Texture2D" uid="uid://8mph28apbdst" path="res://resources/alien/run/Alien_run4.png" id="18_ysdtf"]
+[ext_resource type="Texture2D" uid="uid://5ouh5tymslvg" path="res://resources/alien/run/Alien_run5.png" id="19_x73r6"]
+[ext_resource type="Texture2D" uid="uid://dtkc6ohwdbusw" path="res://resources/alien/run/Alien_run6.png" id="20_16d2w"]
+[ext_resource type="Texture2D" uid="uid://qlc1fqfhxl8s" path="res://resources/player/death/Astronaut_Death1.png" id="21_u8534"]
+[ext_resource type="Texture2D" uid="uid://dbgosw6i0718a" path="res://resources/player/death/Astronaut_Death2.png" id="22_fm4ui"]
+[ext_resource type="Texture2D" uid="uid://drmk87mwj50mt" path="res://resources/player/death/Astronaut_Death3.png" id="23_mvo4i"]
+[ext_resource type="Texture2D" uid="uid://bkjyjt64k0qtv" path="res://resources/player/death/Astronaut_Death4.png" id="24_enu3q"]
+[ext_resource type="Texture2D" uid="uid://chyh05fftrs7g" path="res://resources/player/idle/Astronaut_Idle1.png" id="25_gfvao"]
+[ext_resource type="Texture2D" uid="uid://bc7tl8o57b324" path="res://resources/player/idle/Astronaut_Idle2.png" id="26_0hmdb"]
+[ext_resource type="Texture2D" uid="uid://cyr0c67x51fk8" path="res://resources/player/idle/Astronaut_Idle3.png" id="27_sndmm"]
+[ext_resource type="Texture2D" uid="uid://chqykjhyujrr0" path="res://resources/player/idle/Astronaut_Idle4.png" id="28_fcjbd"]
+[ext_resource type="Texture2D" uid="uid://c1jao8xy7gvmb" path="res://resources/player/idle/Astronaut_Idle5.png" id="29_ig735"]
+[ext_resource type="Texture2D" uid="uid://fjne5whqvjap" path="res://resources/player/idle/Astronaut_Idle6.png" id="30_ohcej"]
+[ext_resource type="Texture2D" uid="uid://ci4o4wcpvt5nh" path="res://resources/player/jump/Astronaut_Jump1.png" id="31_kx2m0"]
+[ext_resource type="Texture2D" uid="uid://3gb6t5ci2ig1" path="res://resources/player/jump/Astronaut_Jump2.png" id="32_m1752"]
+[ext_resource type="Texture2D" uid="uid://wryhhrbuqofl" path="res://resources/player/jump/Astronaut_Jump3.png" id="33_ggobn"]
+[ext_resource type="Texture2D" uid="uid://dt32py7p5hha7" path="res://resources/player/jump/Astronaut_Jump4.png" id="34_edfei"]
+[ext_resource type="Texture2D" uid="uid://cbqqldajec6hm" path="res://resources/player/jump/Astronaut_Jump5.png" id="35_v882b"]
+[ext_resource type="Texture2D" uid="uid://bp0bggqwoqk6" path="res://resources/player/run/Astronaut_Run1.png" id="36_fweu0"]
+[ext_resource type="Texture2D" uid="uid://d1h8jy0iq545s" path="res://resources/player/run/Astronaut_Run2.png" id="37_1wrnm"]
+[ext_resource type="Texture2D" uid="uid://6lkb3tpoeq66" path="res://resources/player/run/Astronaut_Run3.png" id="38_erg1l"]
+[ext_resource type="Texture2D" uid="uid://q01uwjaaeqr2" path="res://resources/player/run/Astronaut_Run4.png" id="39_4kg4b"]
+[ext_resource type="Texture2D" uid="uid://ky5betd1xqd1" path="res://resources/player/run/Astronaut_Run5.png" id="40_yjqh7"]
+[ext_resource type="Texture2D" uid="uid://1fkwhasup37p" path="res://resources/player/run/Astronaut_Run6.png" id="41_og2lx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ehsmr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t7u8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lnwue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7tnb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2q4k2")
+}],
+"loop": true,
+"name": &"alien_fall",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_w36ex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7wro5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_u3bl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wpul2")
+}],
+"loop": true,
+"name": &"alien_idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_pcftw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_cayk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wqfsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wpo5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_22tms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0a0r0")
+}],
+"loop": true,
+"name": &"alien_jump",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_y5372")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nckww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_eftk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ysdtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_x73r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_16d2w")
+}],
+"loop": true,
+"name": &"alien_run",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_u8534")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fm4ui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_mvo4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_enu3q")
+}],
+"loop": true,
+"name": &"astro_fall",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_gfvao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0hmdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sndmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_fcjbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ig735")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ohcej")
+}],
+"loop": true,
+"name": &"astro_idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_kx2m0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_m1752")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ggobn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_edfei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_v882b")
+}],
+"loop": true,
+"name": &"astro_jump",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_fweu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_1wrnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_erg1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_4kg4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_yjqh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_og2lx")
+}],
+"loop": true,
+"name": &"astro_run",
+"speed": 8.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ulp21"]
+radius = 9.0
+height = 28.0
 
 [node name="Player" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_ehsmr")
+animation = &"astro_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
 shape = SubResource("CapsuleShape2D_ulp21")
