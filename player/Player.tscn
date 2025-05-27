@@ -1,5 +1,6 @@
-[gd_scene load_steps=44 format=3 uid="uid://7wu84upsp3nw"]
+[gd_scene load_steps=45 format=3 uid="uid://7wu84upsp3nw"]
 
+[ext_resource type="Script" uid="uid://dvhu1wx33kyov" path="res://player/player.gd" id="1_lnwue"]
 [ext_resource type="Texture2D" uid="uid://ddl7h26dmwcqc" path="res://resources/alien/death/Alien_death1.png" id="1_t7u8x"]
 [ext_resource type="Texture2D" uid="uid://dasp8utmu7782" path="res://resources/alien/death/Alien_death2.png" id="2_lnwue"]
 [ext_resource type="Texture2D" uid="uid://cuuygo6ln5drt" path="res://resources/alien/death/Alien_death3.png" id="3_7tnb4"]
@@ -212,7 +213,8 @@ animations = [{
 radius = 9.0
 height = 28.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="RigidBody2D"]
+script = ExtResource("1_lnwue")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
