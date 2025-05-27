@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://v5g3h1ka5n5d" path="res://resources/obstacles/laser_pod.png" id="1_euf4n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vv7x3"]
-radius = 15.0
+radius = 8.0
 
 [node name="LaserPod" type="Area2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(0.7, 0.7)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_euf4n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

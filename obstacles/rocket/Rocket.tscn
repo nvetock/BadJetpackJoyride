@@ -3,13 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://edrfn31f2ytp" path="res://resources/obstacles/rocket.png" id="1_vuoyk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u3vbx"]
-radius = 6.0
-height = 72.0
+radius = 5.0
+height = 58.0
 
 [node name="Rocket" type="Area2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("1_vuoyk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
