@@ -40,14 +40,7 @@ func _physics_process(delta: float) -> void:
 		if not desired_jump:
 			update_animation(get_current_anim_prefix(), "run")
 			
-			#await get_tree().create_timer(1.0)
-			if $AnimatedSprite2D.get_playing_speed() < 3.0:
-				$AnimatedSprite2D.speed_scale += .1
-				print($AnimatedSprite2D.get_playing_speed())
-			
 		else:
-			last_running_speed = $AnimatedSprite2D.get_playing_speed()
-			$AnimatedSprite2D.speed_scale = 1.0
 			if not has_jumped:
 				update_animation(get_current_anim_prefix(), "jump")
 				has_jumped = true
@@ -63,6 +56,15 @@ func _physics_process(delta: float) -> void:
 ## Returns if player is currently on the ground or not
 func is_grounded() -> bool:
 	return ground_ray.is_colliding()
+
+func speed_up() -> void:
+	if $AnimatedSprite2D.get_playing_speed() < 3.0:
+				$AnimatedSprite2D.speed_scale += .1
+				print($AnimatedSprite2D.get_playing_speed())
+	
+	# Place this after
+	# last_running_speed = $AnimatedSprite2D.get_playing_speed()
+	# 		$AnimatedSprite2D.speed_scale = 1.0
 
 
 # ------------------------------------------------- #
